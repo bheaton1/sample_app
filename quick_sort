@@ -1,0 +1,11 @@
+def quick_sort(array)
+  left = []
+  right = []
+
+  pivot = array.pop
+
+  array.each do |n|
+    n > pivot ? left << n : right << n
+  end
+end
+    
